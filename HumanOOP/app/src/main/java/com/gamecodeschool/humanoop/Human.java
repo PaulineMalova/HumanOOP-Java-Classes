@@ -3,7 +3,7 @@ package com.gamecodeschool.humanoop;
 import android.util.Log;
 
 public class Human {
-    public String name;
+    private String name;
     public int age;
     public int weight;
 
@@ -54,7 +54,8 @@ public class Human {
     }
 
     public void birthday() {
-        int newAge = this.age + 1;
-        Log.d("Human","New age is "+newAge);
+        int myAge = getAge();
+        myAge = myAge + 1;
+        setAge(myAge);
     }
 }

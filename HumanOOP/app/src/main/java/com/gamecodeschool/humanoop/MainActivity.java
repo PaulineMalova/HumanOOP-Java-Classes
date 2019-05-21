@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Human person1 = new Human("Poshie", 20, 55);
+        /*Human person1 = new Human("Poshie", 20, 55);
 
         Log.d("Human","Given name is "+ person1.getName());
 
@@ -47,16 +47,19 @@ public class MainActivity extends AppCompatActivity {
         person1.sleep(9);
         person1.speak("Mobile Development is fun.");
         person1.birthday();
+        Log.d("Human", "New age is "+person1.getAge());*/
 
         Anna iminza = new Anna("Iminza", 19, 65, 2);
 
-        Log.d("Anna", "Given weight is "+ iminza.getWeight());
+        /*Log.d("Anna", "Given weight is "+ iminza.getWeight());
         Log.d("Anna", "Given age is " + iminza.getAge());
         Log.d("Anna", "Given height is " + iminza.getHeight());
-        Log.d("Anna", "Given name is  " +iminza.getName());
+        Log.d("Anna", "Given name is  " +iminza.getName());*/
 
         iminza.eat();
+        Log.d("Human", "Anna's new weight is " + iminza.getWeight());
         iminza.birthday();
+        Log.d("Anna", "New age is " + iminza.getAge());
     }
 
     @Override
